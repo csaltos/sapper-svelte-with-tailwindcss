@@ -36,6 +36,7 @@
 	<title>Sapper project template</title>
 </svelte:head>
 
+<div class="max-w-sm rounded overflow-hidden shadow-lg">
 <h1>Great success!</h1>
 
 <figure>
@@ -43,4 +44,7 @@
 	<figcaption>Have fun with Sapper!</figcaption>
 </figure>
 
+  <div class="px-6 py-4">
 <p><strong>Try editing this file (src/routes/index.svelte) to test live reloading.</strong></p>
+  </div>
+</div>
