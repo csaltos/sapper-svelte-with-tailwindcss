@@ -3,12 +3,8 @@
   "description": "TODO",
   "version": "0.0.1",
   "scripts": {
-    "dev": "npm-run-all --parallel tailwind:dev sapper:dev",
-    "build": "npm-run-all tailwind:build sapper:build",
-    "tailwind:dev": "postcss src/tailwind.css -o static/index.css -w",
-    "tailwind:build": "NODE_ENV=production postcss src/tailwind.css -o static/index.css",
-    "sapper:dev": "sapper dev",
-    "sapper:build": "sapper build --legacy",
+    "dev": "sapper dev",
+    "build": "sapper build --legacy",
     "export": "sapper export --legacy",
     "start": "node __sapper__/build"
   },
@@ -29,11 +25,8 @@
     "@rollup/plugin-commonjs": "^14.0.0",
     "@rollup/plugin-node-resolve": "^8.0.0",
     "@rollup/plugin-replace": "^2.2.0",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^7.1.2",
     "rollup": "^2.3.4",
     "rollup-plugin-svelte": "^6.0.0",
-    "rollup-plugin-terser": "^7.0.0",
-    "tailwindcss": "^1.8.10"
+    "rollup-plugin-terser": "^7.0.0"
   }
 }
